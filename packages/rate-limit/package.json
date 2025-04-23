@@ -1,5 +1,5 @@
 {
-  "name": "@workspace/rate-limit",
+  "name": "@repo/rate-limit",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -20,8 +20,8 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@workspace/typescript-config": "workspace:*",
-    "@workspace/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
     "typescript": "^5.8.2"
   }
 }

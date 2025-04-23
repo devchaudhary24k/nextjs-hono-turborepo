@@ -1,5 +1,5 @@
 {
-  "name": "@workspace/next-config",
+  "name": "@repo/next-config",
   "version": "0.0.0",
   "private": true,
   "exports": {
@@ -13,8 +13,8 @@
     "type-check": "tsc --noEmit --emitDeclarationOnly false"
   },
   "devDependencies": {
-    "@workspace/typescript-config": "workspace:*",
-    "@workspace/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
     "next": "^15.2.0"
   },
   "dependencies": {

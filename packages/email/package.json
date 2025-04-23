@@ -1,5 +1,5 @@
 {
-  "name": "@workspace/email",
+  "name": "@repo/email",
   "version": "0.0.0",
   "private": true,
   "exports": {
@@ -17,8 +17,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@workspace/typescript-config": "workspace:*",
-    "@workspace/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
     "typescript": "^5.8.2"
   },
   "dependencies": {

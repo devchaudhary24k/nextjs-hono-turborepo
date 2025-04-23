@@ -1,5 +1,5 @@
 {
-  "name": "@workspace/observability",
+  "name": "@repo/observability",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -23,8 +23,8 @@
   },
   "devDependencies": {
     "@types/react": "^19",
-    "@workspace/eslint-config": "workspace:*",
-    "@workspace/typescript-config": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "typescript": "^5.8.2"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@workspace/seo",
+  "name": "@repo/seo",
   "version": "0.0.1",
   "private": true,
   "exports": {
@@ -13,8 +13,8 @@
     "type-check": "tsc --noEmit --emitDeclarationOnly false"
   },
   "devDependencies": {
-    "@workspace/typescript-config": "workspace:*",
-    "@workspace/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
     "@types/lodash.merge": "^4.6.9",
     "@types/node": "^20",
     "@types/react": "^19",

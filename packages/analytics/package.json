@@ -1,5 +1,5 @@
 {
-  "name": "@workspace/analytics",
+  "name": "@repo/analytics",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@workspace/eslint-config": "workspace:*",
-    "@workspace/typescript-config": "workspace:*"
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
   }
 }
