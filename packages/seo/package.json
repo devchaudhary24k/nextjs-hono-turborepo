@@ -1,0 +1,29 @@
+{
+  "name": "@workspace/seo",
+  "version": "0.0.1",
+  "private": true,
+  "exports": {
+    ".": "./src/json-ld.tsx",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "type-check": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "devDependencies": {
+    "@workspace/typescript-config": "workspace:*",
+    "@workspace/eslint-config": "workspace:*",
+    "@types/lodash.merge": "^4.6.9",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "next": "^15.2.0"
+  },
+  "dependencies": {
+    "lodash.merge": "^4.6.2",
+    "react": "^19.0.0",
+    "schema-dts": "^1.1.5"
+  }
+}

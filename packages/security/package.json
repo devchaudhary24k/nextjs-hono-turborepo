@@ -1,0 +1,27 @@
+{
+  "name": "@workspace/security",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "type-check": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "@arcjet/next": "1.0.0-beta.3",
+    "@nosecone/next": "1.0.0-beta.3",
+    "@t3-oss/env-nextjs": "^0.12.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@workspace/typescript-config": "workspace:*",
+    "@workspace/eslint-config": "workspace:*",
+    "typescript": "^5.8.2"
+  }
+}

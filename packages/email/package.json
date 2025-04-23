@@ -1,0 +1,32 @@
+{
+  "name": "@workspace/email",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./keys": "./src/keys.ts",
+    "./templates/*": "./src/templates/*.tsx"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "type-check": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@workspace/typescript-config": "workspace:*",
+    "@workspace/eslint-config": "workspace:*",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@react-email/components": "^0.0.33",
+    "@t3-oss/env-nextjs": "^0.12.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "resend": "^4.1.2",
+    "zod": "^3.24.2"
+  }
+}
