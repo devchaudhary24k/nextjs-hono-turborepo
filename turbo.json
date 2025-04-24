@@ -1,8 +1,10 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
+  "envMode": "strict",
   "tasks": {
     "build": {
+      "env": ["DATABASE_URL"],
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**"]
@@ -17,13 +19,27 @@
       "dependsOn": ["^check-types"]
     },
     "dev": {
+      "env": ["DATABASE_URL"],
       "cache": false,
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "persistent": true
     },
     "clean": {
       "cache": false
     },
     "//#clean": {
+      "cache": false
+    },
+    "db:push": {
+      "cache": false
+    },
+    "db:generate": {
+      "cache": false
+    },
+    "db:migrate": {
+      "cache": false
+    },
+    "db:studio": {
       "cache": false
     }
   }

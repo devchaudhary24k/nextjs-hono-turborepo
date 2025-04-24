@@ -1,0 +1,29 @@
+{
+  "name": "@repo/database",
+  "private": true,
+  "version": "0.0.0",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0",
+    "@t3-oss/env-nextjs": "^0.12.0",
+    "bufferutil": "^4.0.9",
+    "drizzle-orm": "^0.42.0",
+    "server-only": "^0.0.1",
+    "ws": "^8.18.1",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/ws": "^8.18.1",
+    "drizzle-kit": "^0.31.0"
+  }
+}
