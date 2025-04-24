@@ -2,7 +2,9 @@
   "name": "backend",
   "scripts": {
     "start": "bun run src/index.ts",
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "clean": "git clean -xdf .cache .turbo dist node_modules .next",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.4.3",

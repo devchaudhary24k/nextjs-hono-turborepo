@@ -8,6 +8,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
     "db:push": "turbo db:push",
+    "clean": "git clean -xdf .cache .turbo dist node_modules .next",
+    "clean:workspaces": "turbo clean",
     "db:studio": "turbo db:studio",
     "db:migrate": "turbo db:migrate",
     "db:generate": "turbo dbgenerate"
